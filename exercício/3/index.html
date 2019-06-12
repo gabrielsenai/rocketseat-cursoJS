@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
     <script>
         var contagem = 0
+        var habil = false
         function temHabilidade(habilidade1,habilidade2,habilidade3) {
             if(habilidade1=="Javascript"){
                contagem ++
@@ -17,9 +18,17 @@
            } else if(habilidade3 == "Javascript"){
                contagem ++
            }
-            alert(contagem)
+            
+        }
+            temHabilidade("Javascript","Php","Python")
+            if(contagem == 1){
+                habil = true
+               alert("Você é hábil")
+
+            }else{
+                habil = false
+                alert("Você não é hábil")
             }
-            temHabilidade("fon","trab","Javascript")
     
     
     </script>
